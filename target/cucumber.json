@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5705000000,
+              "duration": 4509000000,
               "status": "passed"
             },
             "line": 8,
@@ -24,7 +24,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-05-06T15:47:36.487Z",
+        "start_timestamp": "2021-05-07T01:30:37.813Z",
         "line": 12,
         "name": "Login as currentUser",
         "description": "",
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 516000000,
+              "duration": 446000000,
               "status": "passed"
             },
             "line": 13,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 282000000,
+              "duration": 293000000,
               "status": "passed"
             },
             "line": 14,
@@ -64,8 +64,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003cdiv class\u003d\"QBdPU \"\u003e...\u003c/div\u003e is not clickable at point (871, 104). Other element would receive the click: \u003cdiv class\u003d\"_2dDPU   CkGkG\" role\u003d\"dialog\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d90.0.4430.93)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Murzas-MacBook-Pro.local\u0027, ip: \u00272604:2d80:6a00:a200:f0d6:bfac:4b54:a8f0%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u00271.8.0_231\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: /var/folders/7n/vqvnggv950l...}, goog:chromeOptions: {debuggerAddress: localhost:64122}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 99cc3e64125c4b26f2a05ec2b6893cf1\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\n\tat com.insta.step_definitions.InstaLoginPageStep_Definitions.user_enters_password(InstaLoginPageStep_Definitions.java:40)\n\tat ✽.user enters password \"password\"(file:///Users/homefolder/IdeaProjects/Instagramm/src/test/resources/features/login.feature:15)\n",
-              "duration": 16164000000,
+              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003cdiv class\u003d\"QBdPU \"\u003e...\u003c/div\u003e is not clickable at point (871, 104). Other element would receive the click: \u003cdiv class\u003d\"_2dDPU   CkGkG\" role\u003d\"dialog\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d90.0.4430.93)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Murzas-MacBook-Pro.local\u0027, ip: \u00272604:2d80:6a00:a200:211e:bc89:4559:4a33%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u00271.8.0_231\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: /var/folders/7n/vqvnggv950l...}, goog:chromeOptions: {debuggerAddress: localhost:59742}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 3d6e5e6b3fd13ad6970d8d3185c3665a\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\n\tat com.insta.step_definitions.InstaLoginPageStep_Definitions.user_enters_password(InstaLoginPageStep_Definitions.java:40)\n\tat ✽.user enters password \"password\"(file:///Users/homefolder/IdeaProjects/Instagramm/src/test/resources/features/login.feature:15)\n",
+              "duration": 10851000000,
               "status": "failed"
             },
             "line": 15,
