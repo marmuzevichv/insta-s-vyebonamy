@@ -7,7 +7,10 @@ import com.insta.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.WebElement;
+
+import java.util.List;
 
 public class InstaLoginPageStep_Definitions {
     InstaLoginPage instaLoginPage = new InstaLoginPage();
@@ -23,6 +26,7 @@ public class InstaLoginPageStep_Definitions {
         instaLoginPage.UserNameInput.sendKeys(string);
 
     }
+
     @When("user enters password {string}")
     public void user_enters_password(String string) {
         string = ConfigurationReader.getProperty("password");
@@ -32,16 +36,26 @@ public class InstaLoginPageStep_Definitions {
         instaLoginPage.NotNow.click();
         instaLoginPage.NotificationTurnOf.click();
         Driver.getDriver().get(ConfigurationReader.getProperty("urlmuz"));
+        BrowserUtils.waitFor(2);
         instaLoginPage.firstpost.click();
+        BrowserUtils.waitFor(2);
         instaLoginPage.like.click();
+        BrowserUtils.waitFor(3);
         instaLoginPage.commentlike.click();
         //list of comments
-        for (WebElement eachcomment:instaLoginPage.listOfComment) {
-            eachcomment.click();
-
+        List<WebElement> myComments = instaLoginPage.listOfComment;
+        for (WebElement eachcomment : myComments) {
+            try {
+            BrowserUtils.scrollToElement(eachcomment);
+                BrowserUtils.waitFor(2);
+//                eachcomment.click();
+            } catch (ElementClickInterceptedException e) {
+                e.printStackTrace();
+            }
         }
 
     }
+
     @Then("user should see dashboard")
     public void user_should_see_dashboard() {
 

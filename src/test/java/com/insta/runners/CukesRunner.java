@@ -18,4 +18,10 @@ import org.junit.runner.RunWith;
         tags = ""
 )
 public class CukesRunner {
+
+        public static void main(){
+                System.out.println("Here");
+
+                CukesRunner r = new CukesRunner();
+        }
 }
