@@ -35,29 +35,98 @@ public class InstaLoginPageStep_Definitions {
         BrowserUtils.waitFor(5);
         instaLoginPage.NotNow.click();
         instaLoginPage.NotificationTurnOf.click();
-        Driver.getDriver().get(ConfigurationReader.getProperty("urlmuz"));
+
         BrowserUtils.waitFor(2);
         instaLoginPage.firstpost.click();
         BrowserUtils.waitFor(2);
         instaLoginPage.like.click();
         BrowserUtils.waitFor(3);
-        instaLoginPage.commentlike.click();
+
         //list of comments
         List<WebElement> myComments = instaLoginPage.listOfComment;
         for (WebElement eachcomment : myComments) {
             try {
             BrowserUtils.scrollToElement(eachcomment);
                 BrowserUtils.waitFor(2);
-//                eachcomment.click();
+                eachcomment.click();
             } catch (ElementClickInterceptedException e) {
                 e.printStackTrace();
             }
         }
 
     }
+    @When("user redirects to the fanpage")
+    public void user_redirects_to_the_fanpage() {
+        Driver.getDriver().get(ConfigurationReader.getProperty("fanpage"));
+        BrowserUtils.waitFor(2);
+    }
 
-    @Then("user should see dashboard")
-    public void user_should_see_dashboard() {
+    @Then("user should click on the second post")
+    public void user_should_click_on_the_second_post() {
+
+
+    }
+    @Then("user should like the post")
+    public void user_should_like_the_post() {
+
+
+    }
+    @Then("user should like all the coomments bellow the post")
+    public void user_should_like_all_the_coomments_bellow_the_post() {
+
+
+    }
+    @Then("user should click on the third post")
+    public void user_should_click_on_the_third_post() {
+
+
+    }
+    @Then("user should click on the fourth post")
+    public void user_should_click_on_the_fourth_post() {
+
+    }
+    @Then("user should click on the fifth post")
+    public void user_should_click_on_the_fifth_post() {
+
+    }
+    @Then("user should click on the sixth post")
+    public void user_should_click_on_the_sixth_post() {
+
+    }
+
+    @When("user redirects to the fanpage")
+    public void user_redirects_to_the_fanpage() {
+
+    }
+
+
+    @Then("user should click on the second post")
+    public void user_should_click_on_the_second_post() {
+
+    }
+    @Then("user should like the post")
+    public void user_should_like_the_post() {
+
+    }
+    @Then("user should like all the coomments bellow the post")
+    public void user_should_like_all_the_coomments_bellow_the_post() {
+
+    }
+    @Then("user should click on the third post")
+    public void user_should_click_on_the_third_post() {
+
+    }
+    @Then("user should click on the fourth post")
+    public void user_should_click_on_the_fourth_post() {
+    }
+    @Then("user should click on the fifth post")
+    public void user_should_click_on_the_fifth_post() {
+
+
+    }
+    @Then("user should click on the sixth post")
+    public void user_should_click_on_the_sixth_post() {
+
 
     }
 
