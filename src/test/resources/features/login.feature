@@ -14,3 +14,7 @@ Feature: Insta login feature
     When user enters username "username"
     And user enters password "password"
     Then user should see dashboard
+    When user redirects to the fanpage
+    Then user should click on the second post
+    Then user should like the post
+    Then user should like all the coomments bellow the post
