@@ -27,7 +27,7 @@ public class InstaLoginPage {
     @FindBy(xpath = "//button[.='Not Now']")
     public WebElement NotificationTurnOf;
 
-    @FindBy(xpath = "(//div[@class='_9AhH0'])[1]")
+    @FindBy(xpath = "(//div[@class='_9AhH0'])[1]") // --- [1] вот это значит что это элемент 1, поменяешь его на 2-3 будет другой пост открывать
     public WebElement firstpost;
 
     @FindBy(xpath = "/html/body/div[5]/div[2]/div/article/div[3]/section[1]/span[1]/button/div")
