@@ -1,0 +1,105 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 7,
+        "name": "User is already in Login page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5705000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User is on the login page",
+            "match": {
+              "location": "com.insta.step_definitions.InstaLoginPageStep_Definitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-06T15:47:36.487Z",
+        "line": 12,
+        "name": "Login as currentUser",
+        "description": "",
+        "id": "insta-login-feature;login-as-currentuser",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 516000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User is on the login page",
+            "match": {
+              "location": "com.insta.step_definitions.InstaLoginPageStep_Definitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 282000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user enters username \"username\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 21
+                }
+              ],
+              "location": "com.insta.step_definitions.InstaLoginPageStep_Definitions.user_enters_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003cdiv class\u003d\"QBdPU \"\u003e...\u003c/div\u003e is not clickable at point (871, 104). Other element would receive the click: \u003cdiv class\u003d\"_2dDPU   CkGkG\" role\u003d\"dialog\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d90.0.4430.93)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Murzas-MacBook-Pro.local\u0027, ip: \u00272604:2d80:6a00:a200:f0d6:bfac:4b54:a8f0%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u00271.8.0_231\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: /var/folders/7n/vqvnggv950l...}, goog:chromeOptions: {debuggerAddress: localhost:64122}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 99cc3e64125c4b26f2a05ec2b6893cf1\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\n\tat com.insta.step_definitions.InstaLoginPageStep_Definitions.user_enters_password(InstaLoginPageStep_Definitions.java:40)\n\tat ✽.user enters password \"password\"(file:///Users/homefolder/IdeaProjects/Instagramm/src/test/resources/features/login.feature:15)\n",
+              "duration": 16164000000,
+              "status": "failed"
+            },
+            "line": 15,
+            "name": "user enters password \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"password\"",
+                  "offset": 21
+                }
+              ],
+              "location": "com.insta.step_definitions.InstaLoginPageStep_Definitions.user_enters_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "user should see dashboard",
+            "match": {
+              "location": "com.insta.step_definitions.InstaLoginPageStep_Definitions.user_should_see_dashboard()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Insta login feature",
+    "description": "  s a user, I should be able to login with correct credentials to different accounts. And dashboard should be displayed.\n  Accounts are: from configurationProperties",
+    "id": "insta-login-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/login.feature",
+    "tags": []
+  }
+]
