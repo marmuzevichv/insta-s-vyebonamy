@@ -15,17 +15,17 @@ Feature: Insta login feature
     And user enters password "password"
      When user redirects to the fanpage
     Then user should click on the second post
-    Then user should like the post
-   Then user should like all the coomments bellow the post
-    Then user should click on the third post
-    Then user should like the post
-    Then user should like all the coomments bellow the post
-    Then user should click on the fourth post
-    Then user should like the post
-    Then user should like all the coomments bellow the post
-    Then user should click on the fifth post
-    Then user should like the post
-    Then user should like all the coomments bellow the post
-    Then user should click on the sixth post
-    Then user should like the post
-    Then user should like all the coomments bellow the post
+#    Then user should like the post
+#   Then user should like all the coomments bellow the post
+#    Then user should click on the third post
+#    Then user should like the post
+#    Then user should like all the coomments bellow the post
+#    Then user should click on the fourth post
+#    Then user should like the post
+#    Then user should like all the coomments bellow the post
+#    Then user should click on the fifth post
+#    Then user should like the post
+#    Then user should like all the coomments bellow the post
+#    Then user should click on the sixth post
+#    Then user should like the post
+#    Then user should like all the coomments bellow the post

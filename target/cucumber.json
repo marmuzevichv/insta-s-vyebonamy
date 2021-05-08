@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2000000,
+              "duration": 3288000000,
               "status": "passed"
             },
             "line": 8,
@@ -24,7 +24,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-05-07T19:43:04.573Z",
+        "start_timestamp": "2021-05-07T22:43:58.759Z",
         "line": 12,
         "name": "Login as currentUser",
         "description": "",
@@ -34,6 +34,7 @@
         "steps": [
           {
             "result": {
+              "duration": 329000000,
               "status": "passed"
             },
             "line": 13,
@@ -45,6 +46,7 @@
           },
           {
             "result": {
+              "duration": 197000000,
               "status": "passed"
             },
             "line": 14,
@@ -62,7 +64,7 @@
           },
           {
             "result": {
-              "duration": 1000000,
+              "duration": 6843000000,
               "status": "passed"
             },
             "line": 15,
@@ -80,148 +82,27 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 3824000000,
+              "status": "passed"
             },
             "line": 16,
             "name": "user redirects to the fanpage",
-            "match": {},
+            "match": {
+              "location": "com.insta.step_definitions.InstaLoginPageStep_Definitions.user_redirects_to_the_fanpage()"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "skipped"
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: window was already closed\n  (Session info: chrome\u003d90.0.4430.93)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Murzas-MacBook-Pro.local\u0027, ip: \u00272604:2d80:6a00:a200:211e:bc89:4559:4a33%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u00271.8.0_231\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: /var/folders/7n/vqvnggv950l...}, goog:chromeOptions: {debuggerAddress: localhost:59962}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: b0f6266cf4ed9b2d52159ab0c0e2c2ee\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\n\tat com.insta.step_definitions.InstaLoginPageStep_Definitions.user_should_click_on_the_second_post(InstaLoginPageStep_Definitions.java:75)\n\tat ✽.user should click on the second post(file:///Users/homefolder/IdeaProjects/insta-s-vyebonamy/src/test/resources/features/login.feature:17)\n",
+              "duration": 82798000000,
+              "status": "failed"
             },
-            "line": 18,
+            "line": 17,
             "name": "user should click on the second post",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
+            "match": {
+              "location": "com.insta.step_definitions.InstaLoginPageStep_Definitions.user_should_click_on_the_second_post()"
             },
-            "line": 19,
-            "name": "user should like the post",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 20,
-            "name": "user should like all the coomments bellow the post",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 21,
-            "name": "user should click on the third post",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 22,
-            "name": "user should like the post",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 23,
-            "name": "user should like all the coomments bellow the post",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 24,
-            "name": "user should click on the fourth post",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 25,
-            "name": "user should like the post",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 26,
-            "name": "user should like all the coomments bellow the post",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 27,
-            "name": "user should click on the fifth post",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 28,
-            "name": "user should like the post",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 29,
-            "name": "user should like all the coomments bellow the post",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 30,
-            "name": "user should click on the sixth post",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 31,
-            "name": "user should like the post",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 32,
-            "name": "user should like all the coomments bellow the post",
-            "match": {},
             "keyword": "Then "
           }
         ]

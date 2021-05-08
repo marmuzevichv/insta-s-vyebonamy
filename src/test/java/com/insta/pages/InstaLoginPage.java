@@ -26,9 +26,9 @@ public class InstaLoginPage {
 
     @FindBy(xpath = "//button[.='Not Now']")
     public WebElement NotificationTurnOf;
-
+    // second post
     @FindBy(xpath = "(//div[@class='_9AhH0'])[3]") // --- [1] вот это значит что это элемент 1, поменяешь его на 2-3 будет другой пост открывать
-    public WebElement firstpost;
+    public WebElement post;
 
     // this code is shit. У тебя класс называется инстаграм логин пейдж а отсюда и ниже это принадлежит другой странице. сделай другой класс
     @FindBy(xpath = "(//div[@class='QBdPU '])[3]")
@@ -36,6 +36,12 @@ public class InstaLoginPage {
 
     @FindBy(xpath = "//div//ul[@class='Mr508 ']//button[@class='wpO6b ZQScA ']")
     public List<WebElement> listOfComment;
+
+    @FindBy(xpath = "//div[@class='_9AhH0']")
+    public List<WebElement> listOfPosts;
+
+    @FindBy(xpath = "//*[@aria-label ='Close']")
+    public WebElement closePost;
 
 
 
